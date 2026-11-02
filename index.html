@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="vi"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Tin học: Tự luận Bài 4, 5, 6</title>
+<style>
+:root{--bg:#f3f6f4;--card:#fff;--ink:#16231d;--mut:#5a6b62;--line:#d6e0da;--ac:#0d6b4f;--acs:#e0f1ea;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1a15;--card:#16251e;--ink:#e5efe9;--mut:#9db3a8;--line:#2a3e34;--ac:#6fd6a8;--acs:#14392b;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0f1a15;--card:#16251e;--ink:#e5efe9;--mut:#9db3a8;--line:#2a3e34;--ac:#6fd6a8;--acs:#14392b;color-scheme:dark}
+*{box-sizing:border-box}html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 64px)}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:10}
+header{max-width:720px;margin:0 auto;padding:26px 18px 6px}
+h1{font:700 clamp(26px,6vw,36px)/1.15 Georgia,"Times New Roman",serif;margin:0 0 6px}
+header p{margin:0;color:var(--mut);font-size:14px}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);border-bottom:1px solid var(--line);padding:10px 18px}
+nav div{max-width:720px;margin:0 auto;display:flex;gap:8px}
+nav a{flex:1;text-align:center;padding:8px;border:1px solid var(--line);border-radius:999px;background:var(--card);color:var(--ink);text-decoration:none;font-size:15px}
+nav a:focus-visible,button:focus-visible{outline:3px solid var(--ac);outline-offset:2px}
+main{max-width:720px;margin:0 auto;padding:6px 18px 60px}
+h2{font:700 22px Georgia,serif;margin:28px 0 10px}
+.q{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin:0 0 14px}
+.q h3{margin:0 0 4px;font-size:15px;color:var(--ac)}
+.qt{margin:0 0 12px;font-weight:600}
+.gh{font-size:14px;color:var(--mut);margin-bottom:4px}
+ul{margin:0;padding:0;list-style:none}
+li{padding:8px 0 8px 22px;border-top:1px solid var(--line);position:relative;overflow-wrap:anywhere}
+li::before{content:"";position:absolute;left:4px;top:1.05em;width:8px;height:8px;border-radius:50%;background:var(--ac)}
+</style></head><body>
+<header><h1>Tin học: Tự luận Bài 4, 5, 6</h1><p>Câu hỏi và hướng dẫn trả lời</p></header>
+<nav><div><a href="#bai-4">Bài 4</a><a href="#bai-5">Bài 5</a><a href="#bai-6">Bài 6</a></div></nav>
+<main>
+<section id="bai-4"><h2>Bài 4</h2>
+<article class="q"><h3>Câu 1</h3><p class="qt">Một học sinh đang soạn thảo bài văn trên phần mềm Word nhưng chưa kịp bấm chọn lệnh lưu (Save) thì máy tính bị mất điện đột ngột. Dựa trên cơ chế hoạt động của RAM và ROM, em hãy giải thích hiện tượng xảy ra với tệp văn bản đó và chương trình khởi động máy tính khi có điện trở lại.</p>
+<div class="gh">Hướng dẫn trả lời</div><ul>
+<li>Văn bản chưa chọn Save đang được lưu trữ tạm thời trên bộ nhớ RAM.</li>
+<li>Vì RAM - mất dữ liệu khi ngắt điện nên toàn bộ đoạn văn bản chưa lưu sẽ bị xóa sạch hoàn toàn.</li>
+<li>Ngược lại, chương trình khởi động máy tính được lưu cố định trong bộ nhớ ROM - không mất dữ liệu khi ngắt điện. Do đó, khi nguồn điện được cấp trở lại, chương trình trong ROM vẫn hoạt động bình thường để giúp máy tính khởi động lại.</li>
+<li>học sinh bắt buộc phải soạn thảo lại bài văn từ đầu vì dữ liệu trên RAM không thể khôi phục.</li>
+</ul></article>
+<article class="q"><h3>Câu 2</h3><p class="qt">Một bạn học sinh muốn chọn mua máy tính để phục vụ học tập và làm video ngắn. Bạn thấy cấu hình ghi: ‘CPU Intel Core i5 4 nhân 3.2 GHz, Cache 6 MB, RAM 8 GB, SSD 256 GB’. Hãy phân tích ý nghĩa các thông số và tư vấn linh kiện nào quyết định tốc độ khởi động phần mềm và khả năng chạy mượt nhiều ứng dụng cùng lúc.</p>
+<div class="gh">Hướng dẫn trả lời</div><ul>
+<li>Ý nghĩa: CPU có 4 nhân xử lý song song với tốc độ 3.2 GHz; Cache 6 MB giúp CPU truy xuất nhanh; RAM 8 GB lưu dữ liệu tạm; SSD 256 GB lưu hệ điều hành và tệp tin lâu dài.</li>
+<li>Linh kiện quyết định tốc độ khởi động máy và phần mềm là ổ cứng SSD nhờ tốc độ đọc/ghi dữ liệu vượt trội so với ổ HDD truyền thống.</li>
+<li>Linh kiện quyết định khả năng chạy mượt nhiều ứng dụng cùng lúc là dung lượng RAM 8 GB và số nhân của CPU (4 nhân).</li>
+<li>Cấu hình này đáp ứng tốt nhu cầu học tập và làm video ngắn cơ bản của học sinh. Khi làm video phức tạp hơn, học sinh có thể cân nhắc nâng cấp RAM lên 16 GB để trải nghiệm mượt mà hơn.</li>
+</ul></article>
+</section>
+<section id="bai-5"><h2>Bài 5</h2>
+<article class="q"><h3>Câu 1</h3><p class="qt">Giải thích tại sao cổng HDMI hiện nay lại được sử dụng phổ biến hơn cổng VGA truyền thống trên các thiết bị máy tính và máy chiếu?</p>
+<div class="gh">Hướng dẫn trả lời</div><ul>
+<li>Cổng VGA chỉ truyền tín hiệu hình ảnh dạng tương tự (analog) và hoàn toàn không truyền được tín hiệu âm thanh.</li>
+<li>Cổng HDMI có khả năng truyền đồng thời cả tín hiệu hình ảnh và âm thanh số (digital) chất lượng cao trên cùng một sợi cáp.</li>
+<li>Việc sử dụng cáp HDMI giúp kết nối trở nên đơn giản, gọn gàng, giảm thiểu rối dây và nâng cao tính thẩm mỹ.</li>
+<li>Tín hiệu hình ảnh truyền qua cáp HDMI đạt độ phân giải cao (Full HD, 4K) sắc nét hơn hẳn so với chuẩn tín hiệu VGA cũ.</li>
+</ul></article>
+<article class="q"><h3>Câu 2</h3><p class="qt">Phân biệt sự khác nhau giữa cơ chế hoạt động của tính năng Plug and Play và việc phải cài đặt thủ công Trình điều khiển (Driver) khi kết nối thiết bị ngoại vi với máy tính.</p>
+<div class="gh">Hướng dẫn trả lời</div><ul>
+<li>Tính năng Plug and Play (Cắm là chạy) cho phép hệ điều hành tự động nhận diện và cấu hình thiết bị ngay khi cắm vào.</li>
+<li>Trình điều khiển (Driver) là phần mềm trung gian do nhà sản xuất cung cấp giúp hệ điều hành hiểu và điều khiển thiết bị.</li>
+<li>Thiết bị đơn giản (chuột, USB) thường hỗ trợ Plug and Play, còn thiết bị phức tạp (máy in, card đồ họa) thường cần cài Driver.</li>
+<li>Nếu thiếu Driver phù hợp, thiết bị ngoại vi có thể không hoạt động hoặc không thể sử dụng hết các tính năng cao cấp.</li>
+</ul></article>
+</section>
+<section id="bai-6"><h2>Bài 6</h2>
+<article class="q"><h3>Câu 1</h3><p class="qt">Em hãy nêu khái niệm dịch vụ lưu trữ trực tuyến (lưu trữ đám mây) và kể tên 3 nhà cung cấp dịch vụ lưu trữ trực tuyến phổ biến nhất hiện nay.</p>
+<div class="gh">Hướng dẫn trả lời</div><ul>
+<li>Dịch vụ lưu trữ trực tuyến (lưu trữ đám mây) là dịch vụ cho phép lưu trữ, quản lý và chia sẻ tệp tin/thư mục trên hệ thống máy chủ qua Internet thay vì lưu trên đĩa cứng máy tính cá nhân.</li>
+<li>Cho phép người dùng truy cập dữ liệu mọi lúc, mọi nơi từ nhiều thiết bị số khác nhau (máy tính, điện thoại, máy tính bảng) có kết nối mạng.</li>
+<li>Các nhà cung cấp đều cung cấp một dung lượng lưu trữ miễn phí ban đầu cho người dùng khi đăng ký tài khoản cá nhân.</li>
+<li>Ba nhà cung cấp dịch vụ lưu trữ trực tuyến hàng đầu hiện nay bao gồm Google (Google Drive), Microsoft (OneDrive) và Apple (iCloud).</li>
+</ul></article>
+<article class="q"><h3>Câu 2</h3><p class="qt">Em hãy trình bày các bước cơ bản để tải một tệp tin từ máy tính cá nhân lên ổ đĩa trực tuyến Google Drive.</p>
+<div class="gh">Hướng dẫn trả lời</div><ul>
+<li>Bước 1: Mở trình duyệt web, truy cập vào trang web Google Drive (drive.google.com) và đăng nhập tài khoản Google cá nhân.</li>
+<li>Bước 2: Nháy chuột vào nút lệnh “+ Mới” (New) nằm ở góc trên bên trái màn hình giao diện quản lý tệp.</li>
+<li>Bước 3: Chọn lệnh “Tải tệp lên” (File upload) từ danh sách thực đơn vừa hiển thị.</li>
+<li>Bước 4: Trong hộp thoại Open, duyệt tìm và chọn tệp tin cần tải lên từ đĩa cứng máy tính, sau đó nháy chọn Open để bắt đầu quá trình tải.</li>
+</ul></article></section>
+</main></body></html>
